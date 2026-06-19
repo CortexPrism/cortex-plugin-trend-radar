@@ -1,0 +1,30 @@
+{
+  "name": "cortex-plugin-trend-radar",
+  "version": "1.0.0",
+  "description": "TrendRadar Market Intelligence — Continuous web scraping + LLM analysis for market trends, competitor moves, consumer sentiment",
+  "kind": "esm",
+  "entryPoint": "mod.ts",
+  "runtime": "deno",
+  "author": "CortexPrism",
+  "license": "MIT",
+  "repository": "https://github.com/CortexPrism/cortex-plugin-trend-radar",
+  "homepage": "https://cortexprism.io/marketplace/plugins/trend-radar",
+  "capabilities": ["tools", "network:fetch"],
+  "tools": [
+    { "name": "trend_monitor", "description": "Monitor market trends in real-time", "params": [] },
+    {
+      "name": "trend_competitor_analysis",
+      "description": "Track competitor movements",
+      "params": []
+    },
+    { "name": "trend_alert", "description": "Set trend alerts for keywords", "params": [] },
+    {
+      "name": "trend_generate_report",
+      "description": "Generate competitive intelligence report",
+      "params": []
+    }
+  ],
+  "dependencies": {},
+  "peerDependencies": { "cortex": ">=1.0.0" },
+  "aiDisclosure": { "tools": ["Kilo (DeepSeek) — batch scaffold"], "humanReview": true }
+}
